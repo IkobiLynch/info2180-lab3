@@ -165,9 +165,16 @@ window.onload = function(){
                 win.innerHTML = "Congratulations! "+ winner +" is the Winner!";
                 //set attribute of win
                 win.setAttribute("class", "you-won");
-                
+
             }
         }
+
+        //Get new game button through document
+        var newGameButton = document.getElementById("game").getElementsByClassName("btn");
+
+        newGameButton[0].addEventListener("clicl", function(){
+            window.location.reload(true);
+        });
 
     });
 
