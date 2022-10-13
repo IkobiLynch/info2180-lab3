@@ -166,6 +166,10 @@ window.onload = function(){
                 //set attribute of win
                 win.setAttribute("class", "you-won");
 
+                //anti cheat no longer able to click more boxes after a winner
+                //is declared
+                board.style.pointerEvents = "none";
+
             }
         }
 
